@@ -14,6 +14,6 @@ Here is the pull Request I created, which was approved by Elliot, a team member 
 ![Pull Request for widgets](/screenshots/widgets-pr.png)
 This is the main code for the widgets.
 ![The main code used for the widgets](/screenshots/widgets-code.png)
-This is what the widgets dashboard looked.
+This is what the widgets dashboard looked like.
 ![What it looked like](/screenshots/widgets-view.png)
 Completing the widgets dashboard, mainly enabled me to learn about available react drag and drop packages and how to use them, mainly react-grid-layout. For this learning venture, I hope to learn more about React and sockets in my next entry so I can achieve my goal of improving my knowledge and experience in React and sockets.
