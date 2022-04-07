@@ -21,4 +21,6 @@ Completing the widgets dashboard, mainly enabled me to learn about available rea
 ## Making Budgets for Projects with Sockets (07/04/22)
 I made two pull requests to the back-end of the project, and one pull request to the front-end of the project.
 ![Pull Request for get budgets socket back](/screenshots/budget-sockets-back-1.png)
+You can see that one of the developers, Elliot, I work with reviewed my code and approved it. It was the merged the project. In this pull request, I add Socket IO to the back-end and set up the socket initialisation with the front end. Clients will be able to connect up with the sockets and the selected budget can be fetched utilising sockets.
 ![Pull Request for get budgets socket back 2](/screenshots/budget-sockets-back-2.png)
+Elliot and Ahmed then approved the second pull request to the back end of the project. In this pull request I fixed issues with the sockets functionality where the number of users editing a budget updates wasn't updated when a user left the budget.
