@@ -20,3 +20,5 @@ Completing the widgets dashboard, mainly enabled me to learn about available rea
 
 ## Making Budgets for Projects with Sockets (07/04/22)
 I made two pull requests to the back-end of the project, and one pull request to the front-end of the project.
+![Pull Request for get budgets socket back](/screenshots/budget-sockets-back-1.png)
+![Pull Request for get budgets socket back 2](/screenshots/budget-sockets-back-2.png)
