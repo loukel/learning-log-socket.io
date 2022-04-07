@@ -17,3 +17,6 @@ This is the main code for the widgets.
 This is what the widgets dashboard looked like.
 ![What it looked like](/screenshots/widgets-view.png)
 Completing the widgets dashboard, mainly enabled me to learn about available react drag and drop packages and how to use them, mainly react-grid-layout. For this learning venture, I hope to learn more about React and sockets in my next entry so I can achieve my goal of improving my knowledge and experience in React and sockets.
+
+## Making Budgets for Projects with Sockets (07/04/22)
+I made two pull requests to the back-end of the project, and one pull request to the front-end of the project.
