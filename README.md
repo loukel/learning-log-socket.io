@@ -32,6 +32,7 @@ My next plan is to implement the update and create functionality so that the use
 In this entry, I submitted multiple pull requests to the back-end and front-end on the work project that I am working on. I added a function that allowed for lines in the budget to be reordered, this uses an abstract singly linked list in the database where each line points to the next within its category. 
 
 https://user-images.githubusercontent.com/65136145/163256211-be6685f2-4038-46b0-b494-806cfd101437.mp4
+
 This video shows two clients, updating the order of lines on one client updates it for all clients.
 
 <img width="831" alt="Front End Pull Request" src="https://user-images.githubusercontent.com/65136145/163858231-d946e32c-009d-49d8-afba-2e1c56f68364.png">
