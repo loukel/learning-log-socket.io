@@ -27,3 +27,19 @@ Elliot and Ahmed then approved the second pull request to the back end of the pr
 I improved my knowledge of sockets here by learning how to set the connection up on the server and how to connect to those sockets with react - sending and receiving data. I also learnt how to store the data with redux which made it easier to use the data in the budget components.
 I think I want to focus on learn the best ways on implementing sockets with React - is it better to use Redux or not? what is the best way to modularise the socket functionality.
 My next plan is to implement the update and create functionality so that the user can update - change the order and data of budget lines, headings and sub headings - and create new lines, headings and sub headings.
+
+## Updating the order of lines in a budget with Sockets (13/04/22)
+In this entry, I submitted multiple pull requests to the back-end and front-end on the work project that I am working on. I added a function that allowed for lines in the budget to be reordered, this uses an abstract singly linked list in the database where each line points to the next within its category. 
+
+https://user-images.githubusercontent.com/65136145/163256211-be6685f2-4038-46b0-b494-806cfd101437.mp4
+This video shows two clients, updating the order of lines on one client updates it for all clients.
+
+<img width="831" alt="Front End Pull Request" src="https://user-images.githubusercontent.com/65136145/163858231-d946e32c-009d-49d8-afba-2e1c56f68364.png">
+This is front end pull request, adding the new function with sockets. Ahmed went through my code and approved it - it was then merged.
+
+<img width="847" alt="Screenshot 2022-04-18 at 19 34 58" src="https://user-images.githubusercontent.com/65136145/163859029-cc0e1f1a-37f2-427f-b7d2-c50a939cb34a.png">
+This is the back end pull request that I made, it was reviewed and approved by Ahmed. This pull request covered the code which enabled users to drag lines within their category changing the order of which they are displayed.
+
+I learnt more about socket rooms, specifically about how to send data, if I wanted to send data back to the socket (that sent the data) and the room then you would use `io.to(roomId).emit(<message>, <data>)`. However, if you want to send it to just the room and not the socket you would use `socket.to(roomId).emit(<message>, <data>)`. I found the distinction between these message senders was very important therefore improving my knowledge of sockets (socket.IO).
+
+I overestimated the amount of work that I am capable of doing in the time I have available so my goal has been lowered to just trying to develop the project budgets section by adding as much flexibility with reordering lines - being able to move them to other categories. I should be able to become more comfortable with using React with sockets by doing so.
