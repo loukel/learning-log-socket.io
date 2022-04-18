@@ -36,7 +36,7 @@ https://user-images.githubusercontent.com/65136145/163256211-be6685f2-4038-46b0-
 This video shows two clients, updating the order of lines on one client updates it for all clients.
 
 <img width="831" alt="Front End Pull Request" src="https://user-images.githubusercontent.com/65136145/163858231-d946e32c-009d-49d8-afba-2e1c56f68364.png">
-This is front end pull request, adding the new function with sockets. Ahmed went through my code and approved it - it was then merged.
+This is the front end pull request, adding the new function with sockets. Ahmed went through my code and approved it - it was then merged.
 
 <img width="847" alt="Screenshot 2022-04-18 at 19 34 58" src="https://user-images.githubusercontent.com/65136145/163859029-cc0e1f1a-37f2-427f-b7d2-c50a939cb34a.png">
 This is the back end pull request that I made, it was reviewed and approved by Ahmed. This pull request covered the code which enabled users to drag lines within their category changing the order of which they are displayed.
