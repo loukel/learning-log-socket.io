@@ -43,4 +43,10 @@ This is the back end pull request that I made, it was reviewed and approved by A
 
 I learnt more about socket rooms, specifically about how to send data, if I wanted to send data back to the socket (that sent the data) and the room then you would use `io.to(roomId).emit(<message>, <data>)`. However, if you want to send it to just the room and not the socket you would use `socket.to(roomId).emit(<message>, <data>)`. I found the distinction between these message senders was very important therefore improving my knowledge of sockets (socket.IO).
 
-I overestimated the amount of work that I am capable of doing in the time I have available so my goal has been lowered to just trying to develop the project budgets section by adding as much flexibility with reordering lines - being able to move them to other categories. I should be able to become more comfortable with using React with sockets by doing so.
+I overestimated the amount of work that I am capable of doing in the time that I have available, my goal has been lowered to just trying to get the project boards page finished with sockets and leaving the project budgets for another time. I should be able to become more comfortable with using React with sockets by doing so.
+
+## Implementing sockets into a Kanban Board (23/04/22)
+A kanban board looks like this:
+![Kanban Board](/pictures/kanban-board_example.jpg)
+Where there are multiple columns and items. But in this project, I want to implement a kanban board with where items are projects and columns are project states - such as to do, in progress, done.
+
