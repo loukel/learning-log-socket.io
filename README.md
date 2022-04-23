@@ -47,6 +47,6 @@ I overestimated the amount of work that I am capable of doing in the time that I
 
 ## Implementing sockets into a Kanban Board (23/04/22)
 A kanban board looks like this:
-![Kanban Board](/pictures/kanban-board_example.jpg)
+![Kanban Board](/pictures/kanban_board_example.jpg)
 Where there are multiple columns and items. But in this project, I want to implement a kanban board with where items are projects and columns are project states - such as to do, in progress, done.
 
