@@ -51,6 +51,7 @@ A kanban board looks like this:
 Where there are multiple columns and items. But in this project, I want to implement a kanban board with where items are projects and columns are project states - such as to do, in progress, done.
 
 https://user-images.githubusercontent.com/65136145/164943062-59ace19f-c293-4c67-a970-9339d981479b.mov
+
 This is video showing the finished result - I reorder projects, move them to other columns, reorder the columns and I can even hide and edit the label of columns. This is shown with two clients (done using 2 private windows), each screen updates when the other updates showing the live feedback that sockets provide.
 
 I think my goal to learn and become comfortable with using sockets with React is complete, as I am able to confidently utilise complicated functions that involve drag and drop whilst storing the data in the react global state with redux. To carry on my learning venture with sockets, I should try to complete the budgets aslong my work colleagues who are currently trying to finish the feature.
