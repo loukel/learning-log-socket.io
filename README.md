@@ -20,11 +20,17 @@ Completing the widgets dashboard mainly enabled me to learn about the available 
 
 ## Making Budgets for Projects with Sockets (07/04/22)
 In this entry, I set up sockets for the budget section of the app where the finances of a project can be broke down, users need to be able to edit a budget at potentially the same time as other users therefore sockets will need to be utilised. I set it up in the back end and the front end of the app. I made two pull requests to the back-end of the project, and one pull request to the front-end of the project. The sockets that were implemented only allows a budget to be fetched but it also allows for the number of users currently editing the budget to be tracked.
+### Pull Requests
 ![Pull Request for get budgets socket back](/screenshots/budget-sockets-back-1.png)
 You can see that one of the developers, Elliot, I work with reviewed my code and approved it. It was the merged the project. In this pull request, I add Socket IO to the back-end and set up the socket initialisation with the front end. Clients will be able to connect up with the sockets and the selected budget can be fetched utilising sockets.
 ![Pull Request for get budgets socket back 2](/screenshots/budget-sockets-back-2.png)
 Elliot and Ahmed then approved the second pull request to the back end of the project. In this pull request I fixed issues with the sockets functionality where the number of users editing a budget updates wasn't updated when a user left the budget.
-![front-end PR for setting budgets up](/screenshots/front-end PR for setting budgets up.png)
+
+![front-end PR for setting budgets up](/screenshots/front-end_PR_for_setting_budgets_up.png)
+
+Here's the front end pull request which added all the redux
+
+### What I learned
 I improved my knowledge of sockets here by learning how to set the connection up on the server and how to connect to those sockets with react - sending and receiving data. I also learnt how to store the data with redux which made it easier to use the data in the budget components.
 I think I want to focus on learn the best ways on implementing sockets with React - is it better to use Redux or not? what is the best way to modularise the socket functionality.
 My next plan is to implement the update and create functionality so that the user can update - change the order and data of budget lines, headings and sub headings - and create new lines, headings and sub headings.
