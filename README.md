@@ -1,4 +1,4 @@
-# Learning Log For improving at React and Sockets
+# Learning Log for Improving and Learning to React and Sockets
 
 ## Widgets and Introduction(16/03/22)
 
