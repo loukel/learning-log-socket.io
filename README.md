@@ -16,7 +16,7 @@ This is the main code for the widgets.
 ![The main code used for the widgets](/screenshots/widgets-code.png)
 This is what the widgets dashboard looked like.
 ![What it looked like](/screenshots/widgets-view.png)
-Completing the widgets dashboard mainly enabled me to learn about the available react drag and drop packages and how to use them, mainly learning react-grid-layout but overall I improved my knowledge of React. For this learning venture, I hope to learn more about React and sockets in my next entry so I can achieve my goal of improving my knowledge and experience in React and sockets. I'd like to focus more on sockets in the next entries. Also, my work wants
+Completing the widgets dashboard mainly enabled me to learn about the available react drag and drop packages and how to use them, mainly learning react-grid-layout but overall I improved my knowledge of React. For this learning venture, I hope to learn more about React and sockets in my next entry so I can achieve my goal of improving my knowledge and experience in React and sockets. I'd like to focus more on sockets in the next entries. Also, my work wants me to approach the budget section of the app - I will detail more about what this about in the next section.
 
 ## Making Budgets for Projects with Sockets (07/04/22)
 In this entry, I set up the sockets for the budget section of the app where the finances of a project can be broke down, multiple users need to be able to edit a budget at potentially the same time. Therefore, sockets will need to be utilised. I set it up in the back end and the front end of the app. I made two pull requests to the back-end of the project, and one pull request to the front-end of the project. This was my first implementation of sockets into the app, so I had to learn how to use sockets. I did so by watching YouTube tutorials and reading the socket IO documentation (https://socket.io/get-started/chat). It was also useful to look up existing projects with React that also used sockets to get an idea on how to layout them on and split the functions up elgantly. The sockets that were implemented only allows a budget to be fetched but it also allows for the number of users currently editing the budget to be tracked.
@@ -36,29 +36,31 @@ I want to focus on learning the best ways on implementing sockets with React - i
 My next plan is to implement the functionality so that lines, headings and sub headings can be moved around, I will then be able to improve at learning how to implement different functions which manipulate data which is really key to utilising sockets. This will greatly test my ability and will push me to improve my knowledge as when data is being manipulated it is important that every user see's the correct data - especially in this case since the order of the entities are stored using a linked list. If a user has the incorrect data and they attempt to update the order of the linked list then it is very likely that the list will become corrupt (eg. nextId is equal to itself).
 
 ## Updating the order of lines in a budget with Sockets (13/04/22)
-I added a function, on the server, that that enabled the user to reorder lines in the budget, this uses an abstract singly linked list in the database where each line points to the next within its category. I then connected this function up with the front-end so when a user dragged a line to a new position it would update in the database and for every other editing user.
+I added a function, on the server, that enabled the user to reorder lines in the budget, this uses an abstract singly linked list in the database where each line points to the next within its category. I then connected this function up with the front-end so when a user drags a line to a new position it would update it in the database and on render the changes for every other editing user (clients).
 
 https://user-images.githubusercontent.com/65136145/163256211-be6685f2-4038-46b0-b494-806cfd101437.mp4
 
-This video shows two clients, updating the order of lines on one client updates it for all clients.
+This video shows two clients - updating the order of lines on one client updates it for all clients (I'm using two private windows to replicate the idea of multiple clients, this is something I learnt to test the functionality of sockets).
 
 <img width="831" alt="Front End Pull Request" src="https://user-images.githubusercontent.com/65136145/163858231-d946e32c-009d-49d8-afba-2e1c56f68364.png">
-This is the front end pull request, adding the new function with sockets. Ahmed went through my code and approved it - it was then merged.
+This is the front end pull request, adding the new interoperability function with sockets. Ahmed went through my code and approved it - it was then merged.
 
 <img width="847" alt="Screenshot 2022-04-18 at 19 34 58" src="https://user-images.githubusercontent.com/65136145/163859029-cc0e1f1a-37f2-427f-b7d2-c50a939cb34a.png">
-This is the back end pull request that I made, it was reviewed and approved by Ahmed. This pull request covered the code which enabled users to drag lines within their category changing the order of which they are displayed.
+This is the back end pull request that I made, it was reviewed, approved and merged by Ahmed. This pull request covered the code which enabled users to drag lines within their category, changing the order of which they are displayed.
 
-I learnt more about socket rooms, specifically about how to send data, if I wanted to send data back to the socket (that sent the data) and the room then you would use `io.to(roomId).emit(<message>, <data>)`. However, if you want to send it to just the room and not the socket you would use `socket.to(roomId).emit(<message>, <data>)`. I found the distinction between these message senders was very important therefore improving my knowledge of sockets (socket.IO).
+I learnt more about socket rooms, specifically on how to send data, if I wanted to send data back to the socket (that sent the data) and the room then you would use `io.to(roomId).emit(<message>, <data>)`. However, if you want to send it to just the room and not the socket you would use `socket.to(roomId).emit(<message>, <data>)`. I found the distinction between these message senders was very important therefore improving my knowledge of sockets (socket.IO). This Stackoverflow post really helped with understanding https://stackoverflow.com/questions/32674391/io-emit-vs-socket-emit.
 
 I overestimated the amount of work that I am capable of doing in the time that I have available, my goal has been lowered to just trying to get the project boards page finished with sockets and leaving the project budgets for another time. I should be able to become more comfortable with using React with sockets by doing so.
 
 ## Implementing sockets into a Kanban Board (23/04/22)
-A kanban board looks like this:
+A Kanban board looks like this:
 ![Kanban Board](/pictures/kanban_board_example.jpg)
-Where there are multiple columns and items. But in this project, I want to implement a kanban board with where items are projects and columns are project states - such as to do, in progress, done.
+Where there are multiple columns and items. But in this project, I want to implement a kanban board where items are projects and columns are project states - such as to do, in progress, done.
 
 https://user-images.githubusercontent.com/65136145/164943062-59ace19f-c293-4c67-a970-9339d981479b.mov
 
-This is video showing the finished result - I reorder projects, move them to other columns, reorder the columns and I can even hide and edit the label of columns. This is shown with two clients (done using 2 private windows), each screen updates when the other updates showing the live feedback that sockets provide.
+This video shows the finished result - I reorder projects, move projects to other columns, reorder the columns and I can even hide and edit the labels of columns.
 
-I think my goal to learn and become comfortable with using sockets with React is complete, as I am able to confidently utilise complicated functions that involve drag and drop whilst storing the data in the react global state with redux. To carry on my learning venture with sockets, I should try to complete the budgets aslong my work colleagues who are currently trying to finish the feature.
+There are some visual bugs with the board which you may be able to see in the video, they will need to be fixed in the future. I currently don't know how to fix them but it is related to how redux and sockets connect and is something I will need to learn more about them to fix or maybe my team could help. There also could be better way to store functions, the way I've done it now to modularise the sockets is quite good but I believe with more time, experience and research I will find a better way to structure them.
+
+I think my goal to learn and become comfortable with using sockets with React is complete, as I am able to confidently utilise complicated functions that involve drag and drop and linked lists whilst, on the front-end, storing the data in the react global state with redux. To carry on my learning venture with sockets, I should try to complete the budgets along with my work colleagues who are currently trying to finish the feature.
