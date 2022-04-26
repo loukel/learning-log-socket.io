@@ -12,7 +12,6 @@
 - [Evaluation](#evaluation)
 
 ## Motivation <a name="motivation"></a>
-(Why Learn it)
 Sockets are incredible powerful; it enables multiple users to manipulate data at once, where each user see's live changes. Combining sockets with React provides an extremely powerful development environment where a web app can be split up into components while sockets provide an excellent user experience. Live correspondance with servers seem to be the future of web apps especially for apps that are used for teams which seems to be a rising trend in apps. There's apps like Asana, Notion, Monday and soo many others which all utilise sockets. Social media sites also utlise sockets - you wouldn't want to refresh the page just to see if you've received a message or if someone has just posted. Therefore, to be a web developer in this current paradigm its imperative that you become comfortable using sockets.
 
 ## Background <a name="background"></a>
