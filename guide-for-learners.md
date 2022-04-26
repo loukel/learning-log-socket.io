@@ -56,16 +56,12 @@ The best way to understand the general idea of sockets would be to watch [this](
 - **Rooms** are extremely important, rooms enable users connected to sockets to be split up into groups. Once in groups data can be send to specific groups and groups can update the data for other users in that group. This documentation page is incredibly detailed and will help you to understand how to integrate rooms [Socket Room Documentation](https://socket.io/docs/v3/rooms/).
 - **Sending Messages:** It's very important to distinguish the difference between using sockets and IO to send messages, there's a really detailed Stackoverflow post on this [here](https://stackoverflow.com/questions/32674391/io-emit-vs-socket-emit). One method allows for data to be send to the room not including the socket send the original message and the other sends to the whole room.
 
-### Client Sided
-- To use redux with Sockets I would recommend reading this [Article](
-https://medium.com/@gethylgeorge/using-socket-io-in-react-redux-app-to-handle-real-time-data-c0e734297795) this
-
-- Link to some youtube videos
-- Socket io documentation
-- Existing github repositories
+### Client Sided 
+- **React with Sockets:** This is the [documentation for how initiate sockets client side](https://socket.io/docs/v4/client-installation/). I'd also like to iterate a video I previously mentioned which is [Real Time Data Sending with SocketIO](https://www.youtube.com/watch?v=CgV8omlWq2o) which is effective in detailing how to integrate React with sockets.
+- **Redux with Sockets:** I utilised multiple sources to figure out the best way to use Redux with sockets I recommend going over this repository [Kanban Board with Sockets](https://github.com/loukel/KanbanBoard/tree/sockets-redux/client/src) **(ensure that you are on the sockets-redux branch)**
 
 ## Evaluation: How useful is the skill, compared with the effort of learning it? What similar alternatives are there? <a name="evaluation"></a>
-The main alternative to using sockets would be to use a REST api which would be way more formal
+The main alternative to using sockets would be to use a REST api, the disavantage of this compared to this
 
 - research sockets vs REST
 - (diagrams)
@@ -73,9 +69,6 @@ The main alternative to using sockets would be to use a REST api which would be 
 - Found it quite easy to learn but hard to structure files avoid it
 - Definetly worth learn - future of web development
 
-
-
 ## A presentation mark (10%) will be awarded on the basis of
 - formatting in ￿GitHub flavored) Markdown
 - choice of media (images, video)
-- clear writing style appropriate for audience
