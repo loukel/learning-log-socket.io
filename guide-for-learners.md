@@ -1,14 +1,18 @@
-# How to Use Sockets with React
+# Utilising Sockets with React
 ## Motivation: Why learn it?
-- Incredibly powerful - enables multiple users to edit data at once
-- Real time gives for a better experience
-- Works great with react and redux, since components don't need functionality for the sockets, can just fetch and update data straight from the global state
+Sockets are incredible powerful; it enables multiple users to manipulate data at once, where each user see's live changes. Combining sockets with React provides an extremely powerful development environment where a web app can be split up into components while sockets provide an excellent user experience. Live correspondance with servers seem to be the future of web apps especially for apps that are used for teams which seems to be a rising trend in apps. There's apps like Asana, Notion, Monday and soo many others which all utilise sockets. Social media sites also utlise sockets - you wouldn't want to refresh the page just to see if you've received a message or if someone has just posted. Therefore, to be a web developer in this current paradigm its imperative that you become comfortable using sockets.
 
 ## Background: What do you need to know before starting? Include links to material to catch up. Make it clear who your target audience is
+### Node JS / Express
+
+### React
+
+### Redux (Bonus)
+
 Before you start to implement sockets with React, it is important to know that you need to understand confidently how the React environment works and have a good general understanding of Redux - although you could avoid the use of Redux all together
 
 - React
-- Redux (optional)
+- Redux (optional) 
 - Express/Node JS
 
 ## Learning materials: Provide appropriate links to external resources with commentary
