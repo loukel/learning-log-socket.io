@@ -66,3 +66,4 @@ These are the two pull requests I made into the project, they were later reviewe
 ![Kanban Board](/screenshots/front-end_PR_sockets_board.png)
 
 I think my goal to learn and become comfortable with using sockets with React is complete, as I am able to confidently utilise complicated functions that involve drag and drop and linked lists whilst, on the front-end, storing the data in the react global state with redux. To carry on my learning venture with sockets, I should try to complete the budgets along with my work colleagues who are currently trying to finish the feature.
+<!-- Inaccurate entry dates (git history) due format changes -->
