@@ -61,25 +61,33 @@ The best way to understand the general idea of sockets would be to watch [this](
 
 ## Evaluation: <a name="evaluation"></a>
 (How useful is the skill, compared with the effort of learning it? What similar alternatives are there?)
-### Sockets vs REST
-REST (Representational State Transfer) describes an architectual style for APIs, an API allows for clients to connect up with a server. This usally works by the client sending a request (which could be a ny of the methods: GET, POST, PUT, DELETE) and the server returning a response. This can be seen below in the diagram.
-![image](https://user-images.githubusercontent.com/65136145/165501072-b6058c12-adad-494c-b023-ba7267be323b.png)
+
+### Alternatives
+1. Sockets vs REST
+REST (Representational State Transfer) describes an architectual style for APIs, an API allows for clients to connect up with a server. This usally works by the client sending a request (which could be a ny of the methods: GET, POST, PUT, DELETE) and the server returning a response. This can be seen below in the diagram. Generally a REST API works in a request/response methodology
+![image](https://user-images.githubusercontent.com/65136145/165542504-ea9e69f1-7164-4134-a639-7e3143d111b9.png)
 
 *(from https://phpenthusiast.com/blog/what-is-rest-api)*
 
+Sockets connect clients up with the server but differ from REST API in the way that they provide a continuous connection where messages are received and sent. Sockets work in a full duplex methodology.
 ![image](https://user-images.githubusercontent.com/65136145/165497187-72a8fb13-eec5-4ac1-82d3-c3f99795d53f.png)
 
 *(from https://socket.io/docs/v3/how-it-works/)*
 
-### Socket.IO vs WebSocket API
-The main alternative to using sockets would be to using a REST api, the disavantage of this compared to this sockets would the fact
+|<img width="1000" height="1">Sockets<img width="1000" height="1">|<img width="1000" height="1">REST API<img width="1000" height="1">|
+|----------|:-------------:|
+| Faster |  Slower |
+| Only vertical scaling available - to improve the performance you can't increase the amount socket servers, you can only increase the hardware |  All scaling options available |
+(source: https://ipwithease.com/web-socket-vs-rest/)
+| Protocol |  Architecture |
+| Requires memory and buffer to store data |  Requires fewer resources |
+| Suitable for real time apps |  Permits many data types: plain text, html, json |
 
-- research sockets vs REST
-- (diagrams)
-- WebSocket API vs Socket IO
-- Found it quite easy to learn but hard to structure files avoid it
-- Definetly worth learn - future of web development
+In my opinion its best to use Sockets when you require a real time app whereas if just simple requests are required then a REST API would be more suitable due to the formal architecture it provides.
 
-## A presentation mark (10%) will be awarded on the basis of
-- formatting in ￿GitHub flavored) Markdown
-- choice of media (images, video)
+### How Useful is Integrating Sockets? 
+Sockets enable a web app to interact with a database in real time, allowing for multiple users to work on the same entities at once. Sockets are extremely simple to integrate and once set up, its very easy to add more functions. There's not too much to learn to be able to integrate sockets into a web app, especially if you are very comfortable with the techonologies that the sockets are being integrated with.
+
+A good example of the applications of sockets, which show how useful they can, would be this Kanban Board:
+https://user-images.githubusercontent.com/65136145/165566398-0a659e0b-5300-45e2-a792-197e38c27d21.mov
+It tracks the order of the items and columns using a linked list. If it used a REST API then if one user updated to order of either the items or columns then other users who are already fetched board wouldn't know the order and therefore the new linked list data. If these other users try to update the board with the previous linked list order then it is likely to cause the list to become corrupt meaning the data can't be rendered due to the corrupt linked list. Sockets fixes this by enable real time updates so that every user has the most up to date data.
