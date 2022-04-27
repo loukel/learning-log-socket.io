@@ -57,10 +57,19 @@ The best way to understand the general idea of sockets would be to watch [this](
 
 ### Client Sided 
 - **React with Sockets:** This is the [documentation for how initiate sockets client side](https://socket.io/docs/v4/client-installation/). I'd also like to iterate a video I previously mentioned which is [Real Time Data Sending with SocketIO](https://www.youtube.com/watch?v=CgV8omlWq2o) which is effective in detailing how to integrate React with sockets.
-- **Redux with Sockets:** I utilised multiple sources to figure out the best way to use Redux with sockets I recommend going over this repository [Kanban Board with Sockets](https://github.com/loukel/KanbanBoard/tree/sockets-redux/client/src) **(ensure that you are on the sockets-redux branch)**
+- **Redux with Sockets:** I utilised multiple sources to figure out the best way to use Redux with sockets and so I recommend going over my repository [Kanban Board with Sockets](https://github.com/loukel/KanbanBoard/tree/sockets-redux/client/src) **(ensure that you are on the sockets-redux branch)** and going through the reducers, actions and service files. It also contains the server side code so it will help understanding how it connects. You will then be able to modify the functions to your own purpose.
 
-## Evaluation: How useful is the skill, compared with the effort of learning it? What similar alternatives are there? <a name="evaluation"></a>
-The main alternative to using sockets would be to use a REST api, the disavantage of this compared to this
+## Evaluation: <a name="evaluation"></a>
+(How useful is the skill, compared with the effort of learning it? What similar alternatives are there?)
+### Sockets vs REST
+REST (Representational State Transfer) describes an architectual style for APIs, an API allows for clients to connect up with a server. This usally works by the client sending a request (which could be a ny of the methods: GET, POST, PUT, DELETE) and the server returning a response. This can be seen below in the diagram.
+![image](https://user-images.githubusercontent.com/65136145/165501072-b6058c12-adad-494c-b023-ba7267be323b.png)
+*(from https://phpenthusiast.com/blog/what-is-rest-api)*
+![image](https://user-images.githubusercontent.com/65136145/165497187-72a8fb13-eec5-4ac1-82d3-c3f99795d53f.png)
+*(from https://socket.io/docs/v3/how-it-works/)*
+
+### Socket.IO vs WebSocket API
+The main alternative to using sockets would be to using a REST api, the disavantage of this compared to this sockets would the fact
 
 - research sockets vs REST
 - (diagrams)
