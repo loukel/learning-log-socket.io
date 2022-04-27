@@ -20,7 +20,7 @@ Sockets are incredible powerful; it enables multiple users to manipulate data at
 ## Background <a name="background"></a>
 The following technologies are important to know before trying to pick Socket.IO up, React and Node (Express) is the most modern and popular technology stack which is good because it results in there being a lot more support online (resources, Stackoverflow answers, YouTube tutorials etc.), making it easy to integrate.
 
-However, Socket.IO works with the following server implementations:=
+However, Socket.IO works with the following server implementations:
 - JavaScript
 - Java
 - Java
