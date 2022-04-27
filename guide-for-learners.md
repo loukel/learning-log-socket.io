@@ -64,8 +64,11 @@ The best way to understand the general idea of sockets would be to watch [this](
 ### Sockets vs REST
 REST (Representational State Transfer) describes an architectual style for APIs, an API allows for clients to connect up with a server. This usally works by the client sending a request (which could be a ny of the methods: GET, POST, PUT, DELETE) and the server returning a response. This can be seen below in the diagram.
 ![image](https://user-images.githubusercontent.com/65136145/165501072-b6058c12-adad-494c-b023-ba7267be323b.png)
+
 *(from https://phpenthusiast.com/blog/what-is-rest-api)*
+
 ![image](https://user-images.githubusercontent.com/65136145/165497187-72a8fb13-eec5-4ac1-82d3-c3f99795d53f.png)
+
 *(from https://socket.io/docs/v3/how-it-works/)*
 
 ### Socket.IO vs WebSocket API
