@@ -7,12 +7,12 @@ https://github.com/loukel/learning-log
 I work as a web developer in a team for a company who are creating a web app for fellow videographers (filming, editing and directing) to help manage everything related to their projects. I'm hoping to improve my knowledge and experience with using Sockets with React. I aim to complete the two components in the following order:
 
 - Widgets Dashboard: users should be able to view widgets relating to different aspects of the app: budgets, equipment, projects etc. Users should be able to drag different size cards about in a grid like format.
-- Kanban board for project states: I've previously created a drag and drop kanban board where project states are displayed and can be changed but this fetches data using a REST API. However, there is an issue when multiple users are editing the project states at the same time, this would be fixed with sockets.
+- Kanban board for project states: I've previously created a drag and drop Kanban board where project states are displayed and can be changed but this fetches data using a REST API. However, there is an issue when multiple users are editing the project states at the same time, this would be fixed with sockets.
   There maybe other features to build but it will depend on the demands of the team and what they want to achieve for the app at this time, all features that I will do will help me to improve with React and Sockets.
 
 ### Working on the Widgets Dashboard
 
-First, I had to research React compatible drag and drop packages and the best one I could find was [react-grid-layout](https://react-grid-layout.github.io/react-grid-layout/examples/0-showcase.html). Using the examples they provided and trying apply it to the dashboard was the best way to learn it. The documentation wasn't too detailed so it was quite difficulte to use. But the end result was quite good though a bit unsmooth.
+First, I had to research React compatible drag and drop packages and the best one I could find was [react-grid-layout](https://react-grid-layout.github.io/react-grid-layout/examples/0-showcase.html). Using the examples they provided and trying apply it to the dashboard was the best way to learn it. The documentation wasn't too detailed so it was quite difficult to use. But the end result was quite good though a bit clunky.
 Here's the pull Request I created, which was approved by Elliot, a team member who reviewed my code and approved it.
 ![Pull Request for widgets](/screenshots/widgets-pr.png)
 This is the main code for the widgets.
