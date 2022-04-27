@@ -10,7 +10,7 @@ I work as a web developer in a team for a company who are creating a web app for
 - Kanban board for project states: I've previously created a drag and drop kanban board where project states are displayed and can be changed but this fetches data using a REST API. However, there is an issue when multiple users are editing the project states at the same time, this would be fixed with sockets.
   There maybe other features to build but it will depend on the demands of the team and what they want to achieve for the app at this time, all features that I will do will help me to improve with React and Sockets.
 
-### Working on the widgets dashboard
+### Working on the Widgets Dashboard
 
 First, I had to research React compatible drag and drop packages and the best one I could find was [react-grid-layout](https://react-grid-layout.github.io/react-grid-layout/examples/0-showcase.html). Using the examples they provided and trying apply it to the dashboard was the best way to learn it. The documentation wasn't too detailed so it was quite difficulte to use. But the end result was quite good though a bit unsmooth.
 Here's the pull Request I created, which was approved by Elliot, a team member who reviewed my code and approved it.
@@ -41,7 +41,7 @@ This set up all the redux functionality for the budgets to work with sockets. Th
 I researched how to set and implement sockets up on express server - how to initilise the connection, how to send and receive messages. Something key to socket.IO that I learnt was how to set rooms up for users to join. The documentation for socket.IO rooms was very concise and clear and was all that I needed to utilise them (https://socket.io/docs/v3/rooms/). Using Redux was the best way to use sockets with React as it hid the complexity of sockets from the components. Therefore, the components only had to fetch and update the global state that redux provided. I learnt how to initialise the socket connection with redux so that data was stored in the redux state when appropriate. I also learnt how to set up actions so that the socket messages could be send and received from the client.
 My next plan is to implement the functionality so that lines, headings and sub headings can be moved around which implementing different functions which manipulate data. This will greatly test my ability and push me to improve my knowledge of sockets as when data is being manipulated it is important that every user see's the correct data - especially in this case since the order of the entities are stored using a linked list. If a user has the incorrect data and they attempt to update the order of the linked list then it is very likely that the list will become corrupt (eg. nextId is equal to itself).
 
-## Updating the order of lines in a budget with Sockets (13/04/22)
+## Updating the Order of Lines in a Budget with Sockets (13/04/22)
 
 I added a function, on the server, that lines to be reordered in the budget. I then connected this function up with the front-end so when a user drags a line to a new position it would update it in the database and on render the changes for every other editing user (clients).
 
